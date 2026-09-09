@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 · 小狮数学乐园</title>
+<style>
+  :root{
+    --cream:#FFF9F0; --card:#FFFFFF; --ink:#3D2C1E; --ink2:#6B5847;
+    --ink3:#A08A76; --line:#F0E2CE; --brand:#FF8A3D; --brand-d:#E86A1E; --sun:#FFC93C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"PingFang SC","HarmonyOS Sans SC","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--cream); color:var(--ink); line-height:1.75;
+    padding:24px 16px 64px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;padding:24px 0 28px}
+  .logo{
+    width:72px;height:72px;margin:0 auto 14px;border-radius:22px;
+    background:linear-gradient(160deg,var(--sun),var(--brand));
+    display:flex;align-items:center;justify-content:center;font-size:40px;
+    box-shadow:0 8px 20px rgba(232,138,61,.28);
+  }
+  h1{font-size:26px;font-weight:800;letter-spacing:.5px}
+  .sub{color:var(--ink2);font-size:14px;margin-top:6px}
+  .meta{
+    display:inline-block;margin-top:12px;padding:5px 14px;border-radius:999px;
+    background:#fff;border:1px solid var(--line);color:var(--ink2);font-size:12px;font-weight:600;
+  }
+  .langbar{display:flex;justify-content:center;gap:8px;margin:22px 0 6px}
+  .langbar button{
+    border:none;cursor:pointer;font:inherit;font-size:14px;font-weight:700;
+    padding:9px 22px;border-radius:999px;background:#fff;color:var(--ink2);
+    box-shadow:0 2px 6px rgba(61,44,30,.07);transition:all .15s;
+  }
+  .langbar button.on{background:linear-gradient(160deg,var(--brand),var(--brand-d));color:#fff}
+  .card{
+    background:var(--card);border-radius:20px;padding:26px 24px;margin-top:18px;
+    box-shadow:0 6px 20px rgba(61,44,30,.07);
+  }
+  h2{font-size:18px;font-weight:800;margin-bottom:12px;color:var(--ink)}
+  h2 .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:9px;background:var(--sun);color:#7A5200;
+    font-size:14px;margin-right:9px;vertical-align:2px;
+  }
+  p{font-size:15px;color:var(--ink2);margin-bottom:10px}
+  ul{margin:0 0 10px;padding-left:20px}
+  li{font-size:15px;color:var(--ink2);margin-bottom:6px}
+  strong{color:var(--ink);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--ink);font-weight:700;background:#FFFBF4}
+  td{color:var(--ink2)}
+  .note{
+    background:#FFF6E6;border-left:4px solid var(--sun);border-radius:10px;
+    padding:12px 16px;margin:14px 0;font-size:14px;color:var(--ink2);
+  }
+  footer{text-align:center;margin-top:32px;font-size:13px;color:var(--ink3);line-height:2}
+  a{color:var(--brand-d);text-decoration:none;font-weight:600}
+  [hidden]{display:none !important}
+  @media(max-width:480px){
+    .card{padding:20px 18px}
+    h1{font-size:22px}
+    body{padding:16px 12px 48px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">🦁</div>
+    <h1>隐私政策与儿童保护声明</h1>
+    <p class="sub">小狮数学乐园（Little Lion Math）</p>
+    <span class="meta">更新日期：2026 年 9 月 9 日 · 版本 1.0.0</span>
+  </header>
+
+  <div class="langbar">
+    <button id="btn-zh" class="on" onclick="setLang('zh')">中文</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ================= 中文 ================= -->
+  <div id="lang-zh">
+    <div class="card">
+      <p>《小狮数学乐园》（以下简称"本应用"）由开发者占飞提供。我们深知儿童个人信息保护的重要性，请家长在陪同下仔细阅读本政策。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">1</span>我们不收集任何信息</h2>
+      <ul>
+        <li>本应用<strong>完全离线运行</strong>：不申请网络权限，不连接任何服务器，不上传任何数据；</li>
+        <li>我们不会收集、使用、存储或向第三方共享您或孩子的任何个人信息，包括但不限于姓名、年龄、位置、设备标识符、使用记录；</li>
+        <li>学习进度（星星、贴纸、关卡记录）<strong>仅保存在您的手机本地</strong>，卸载应用即彻底删除。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">2</span>权限使用说明</h2>
+      <table>
+        <tr><th>权限</th><th>用途</th></tr>
+        <tr><td>震动（VIBRATE）</td><td>儿童答题时的触觉反馈，普通权限，不涉及隐私</td></tr>
+      </table>
+      <p>本应用不申请网络、定位、相机、麦克风、通讯录、存储、电话等任何其他权限。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">3</span>儿童隐私保护</h2>
+      <ul>
+        <li>本应用面向 3–6 岁儿童，遵循《中华人民共和国未成年人保护法》《儿童个人信息网络保护规定》及 Google Play 家庭政策；</li>
+        <li>应用内<strong>无广告、无应用内购买、无社交功能、无外部链接跳转</strong>；</li>
+        <li>家长可通过应用内「家长中心」管理设置与数据，该入口设有算术验证以防儿童误操作。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">4</span>数据的存储与删除</h2>
+      <ul>
+        <li>全部数据通过 Android DataStore 存储于设备本地；</li>
+        <li>您可随时在「家长中心 → 清空学习数据」一键删除；</li>
+        <li>卸载应用即删除全部数据；</li>
+        <li>卸载重装后本地进度无法恢复，属正常设计（无云端账号体系）。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">5</span>应用内购买</h2>
+      <div class="note">本节自 V1.1 起生效，当前版本（1.0.0）无任何内购。</div>
+      <ul>
+        <li>提供一次性买断的"解锁全部内容"选项，<strong>不含订阅、不含自动续费</strong>；</li>
+        <li>支付由应用市场官方支付渠道完成，<strong>我们不接触、不存储任何支付信息</strong>；</li>
+        <li>解锁入口位于「家长中心」，需通过算术验证后进入，防止儿童误操作。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">6</span>政策更新</h2>
+      <p>如本政策发生重大变更，我们将在应用更新说明中显著提示。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">7</span>联系我们</h2>
+      <p>如对本政策有任何疑问、意见或建议，请联系：</p>
+      <p><a href="mailto:json.zhan@gmail.com">json.zhan@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ================= English ================= -->
+  <div id="lang-en" hidden>
+    <div class="card">
+      <h2>Introduction</h2>
+      <p>Little Lion Math is provided by an independent developer. We take children's privacy seriously and encourage parents to read this policy together with their child.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">1</span>We collect nothing</h2>
+      <ul>
+        <li>The app works <strong>fully offline</strong>: it does not request internet permission, connects to no server, and uploads nothing.</li>
+        <li>We do not collect, use, store or share any personal information about you or your child, including name, age, location, device identifiers or usage records.</li>
+        <li>Learning progress (stars, stickers, level records) <strong>stays on your device only</strong> and is removed when the app is uninstalled.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">2</span>Permissions</h2>
+      <table>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+        <tr><td>VIBRATE</td><td>Haptic feedback when answering; a normal permission with no privacy impact</td></tr>
+      </table>
+      <p>The app requests no internet, location, camera, microphone, contacts, storage or phone permissions.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">3</span>Children's privacy</h2>
+      <ul>
+        <li>Designed for children aged 3–6 and compliant with COPPA, GDPR-K and the Google Play Families Policy.</li>
+        <li>The app contains <strong>no ads, no in-app purchases, no social features and no external links</strong>.</li>
+        <li>A parent area is protected by a simple math problem so children cannot enter it by accident.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">4</span>Storage and deletion</h2>
+      <ul>
+        <li>All data is stored locally on the device via Android DataStore.</li>
+        <li>You can erase everything at any time in Parent Area → Clear learning data.</li>
+        <li>Uninstalling the app removes all data.</li>
+        <li>Progress cannot be restored after reinstalling — this is by design, as there is no cloud account.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">5</span>In-app purchases</h2>
+      <div class="note">Effective from v1.1. The current version (1.0.0) has no in-app purchases.</div>
+      <ul>
+        <li>A one-time "unlock all content" option only — <strong>no subscriptions, no auto-renewal</strong>.</li>
+        <li>Payments are processed by the official app store; <strong>we never see or store payment details</strong>.</li>
+        <li>The unlock entry sits inside the parent area behind a math gate.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">6</span>Changes</h2>
+      <p>Material changes to this policy will be highlighted in the app's release notes.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">7</span>Contact</h2>
+      <p>Questions or feedback? Reach us at</p>
+      <p><a href="mailto:json.zhan@gmail.com">json.zhan@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <div>小狮数学乐园 · com.zhanfei.kidsmath · Version 1.0.0</div>
+    <div>最后更新：2026-09-09</div>
+  </footer>
+
+</div>
+
+<script>
+function setLang(l){
+  document.getElementById('lang-zh').hidden = (l !== 'zh');
+  document.getElementById('lang-en').hidden = (l !== 'en');
+  document.getElementById('btn-zh').classList.toggle('on', l === 'zh');
+  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  document.documentElement.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  try { localStorage.setItem('pp-lang', l); } catch(e){}
+}
+try{
+  var saved = localStorage.getItem('pp-lang');
+  if (saved) setLang(saved);
+} catch(e){}
+</script>
+</body>
+</html>
